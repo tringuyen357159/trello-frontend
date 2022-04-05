@@ -1,0 +1,9 @@
+@import '_setting.scss';
+
+.nav-board {
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    font-size: 1.2rem;
+}

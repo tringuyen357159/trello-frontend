@@ -1,0 +1,10 @@
+@import '_setting.scss';
+
+
+.nav-header {
+    padding-left: $gap;
+    display: flex;
+    align-items: center;
+    background-color: $nav-header-color;
+    font-size: 1.5rem;
+}

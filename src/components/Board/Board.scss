@@ -1,0 +1,36 @@
+@import '_setting.scss';
+
+.board-columns {
+    display: flex;
+    overflow-x: auto;
+    margin: 0 $gap $gap 0;        
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    &::-webkit-scrollbar:horizontal {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    .columns-drop-preview {
+        background-color: rgba(150, 150, 200, 0.1);
+        border: 1px dashed #abc;
+        margin: 5px 45px 5px 5px;
+    }
+}
+
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
