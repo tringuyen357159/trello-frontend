@@ -4,6 +4,9 @@
     display: flex;
     overflow-x: auto;
     margin: 0 $gap $gap 0;        
+    overflow-y: hidden;
+    height: 90%;
+    overflow: hidden;
 
     &::-webkit-scrollbar {
         -webkit-appearance: none;
@@ -22,6 +25,58 @@
         background-color: rgba(150, 150, 200, 0.1);
         border: 1px dashed #abc;
         margin: 5px 45px 5px 5px;
+    }
+
+    .board-add {
+        min-width: 300px;
+        height: 46px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-left: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 46px;
+        padding-left: 10px;
+        cursor: pointer;
+        opacity: 0.8;
+        color: white;
+        max-width: 300px;
+        animation: 0.8s ease;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        i {
+            margin-right: 4px;
+        }
+
+        &__input {
+
+            &:focus {
+                outline: none;
+                box-shadow: unset;
+            }
+        }
+    }
+
+    .board-form {
+        min-width: 300px;
+        background-color: #ebecf0;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 46px;
+        padding-left: 10px;
+        max-width: 300px;
+        padding: 6px 10px;
+        animation: 0.8s ease-in-out;
+
+
+        .board-close {
+            font-size: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
     }
 }
 
