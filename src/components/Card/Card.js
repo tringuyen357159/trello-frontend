@@ -7,7 +7,7 @@ const Card = (props) => {
   return (
     <>
       <div className='card-item'>
-        {card.cover && <img src={card.cover} onMouseDown={e => e.preventDefault()} />}
+        {card.cover && <img src={card.cover} onMouseDown={e => e.preventDefault()} alt='img-cover' />}
         {card.title}
       </div>
     </>

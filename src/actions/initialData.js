@@ -111,7 +111,7 @@ export const initialData = {
                             cover: null
                         }
                     ]
-                }
+                },
             ]
         }
     ]
